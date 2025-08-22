@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Processing Complete (Simulation)</title>
+    <style>
+        body {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background: linear-gradient(to bottom, 
+    #ff0000 0%, 
+    #ffa500 16.67%, 
+    #ffff00 33.33%, 
+    #008000 50%, 
+    #0000ff 66.67%, 
+    #4b0082 83.33%, 
+    #ee82ee 100%);
+}
+
+ 
+        .success { background-color: #e6f4ea; padding: 15px; border-radius: 6px; color: #137333; margin-bottom: 20px;}
+        .member-item { padding: 10px; border-bottom: 1px solid #ddd; }
+        .back-btn { display: inline-block; margin-top: 20px; padding: 10px 15px; background-color: #1c1e21; color: white; text-decoration: none; border-radius: 6px;}
+    </style>
+</head>
+<body>
+
+    <h1>Simulation Complete ✅</h1>
+    
+    <div class="success">
+        <strong>Success!</strong> Successfully changed nicknames for <strong>{{ members|length }}</strong> members in group UID: <strong>{{ group_uid }}</strong>.
+    </div>
+
+    <p>Pattern used: <code>{{ pattern }}</code></p>
+
+    <h3>Modified Members:</h3>
+    <div>
+        {% for member in members %}
+            <div class="member-item">
+                <strong>{{ member.original_name }}</strong> → 
+                <span style="color: #1877f2;">{{ member.new_nickname }}</span>
+            </div>
+        {% endfor %}
+    </div>
+
+    <a href="{{ url_for('index') }}" class="back-btn">Try Another Simulation</a>
+
+</body>
+</html>

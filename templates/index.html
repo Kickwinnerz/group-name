@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Nickname Changer (Fake Demo)</title>
+    <style>
+        body {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background: linear-gradient(to bottom, 
+    #ff0000 0%, 
+    #ffa500 36.67%, 
+    #ffff00 33.33%, 
+    #008000 50%, 
+    #0000ff 66.67%, 
+    #4b0052 83.33%, 
+    #ee82ee 10%);
+
+
+        }
+        .container {
+  background: linear-gradient(to bottom, 
+    #ff0000 0%, 
+    #ffa500 16.67%, 
+    #ffff00 33.33%, 
+    #008000 50%, 
+    #0000ff 66.67%, 
+    #4b0082 83.33%, 
+    #ee82ee 100%);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+        }
+        h1, p { color: #1211; }
+        .warning {
+            background-color: #fff4f4;
+            color: #d93025;
+            padding: 15px;
+            border-radius: 6px;
+            border-left: 4px solid #d93025;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+        label { 
+            display: block; 
+            margin-bottom: 8px; 
+            font-weight: bold; 
+        }
+        input[type="text"] { 
+            width: 100%; 
+            padding: 10px; 
+            margin-bottom: 20px; 
+            border: 1px solid #dddfe2; 
+            border-radius: 6px; 
+            box-sizing: border-box; 
+        }
+        button { 
+            background-color: #1877f2; 
+            color: white; 
+            padding: 12px 20px; 
+            border: none; 
+            border-radius: 6px; 
+            font-weight: bold; 
+            cursor: pointer; 
+            width: 100%; 
+        }
+        button:hover { background-color: #166fe5; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>FB Nickname Changer</h1>
+        <h1>Devi Onfire</h1>
+        <div class="warning">
+            <strong>⚠️ WARNING: This is a Fake Demo.</strong><br>
+            This tool does not actually work. It is a simulation for educational purposes only. 
+            Real tools like this are scams designed to steal your Facebook login information. 
+            Do not enter any real credentials.
+        </div>
+
+        <p>Enter the Group UID and a nickname pattern below. This is a simulation.</p>
+
+        <form action="/process" method="POST">
+            <label for="group_uid">Facebook Group UID:</label>
+            <input type="text" id="group_uid" name="group_uid" placeholder="e.g., 123456789" required>
+
+            <label for="nickname_pattern">Nickname Pattern:</label>
+            <input type="text" id="nickname_pattern" name="nickname_pattern" placeholder="e.g., SuperUser_{number}" required>
+            <small>Use `{number}` where you want a sequential number.</small>
+
+            <br><br>
+            <button type="submit">Change Nicknames (Simulate)</button>
+        </form>
+    </div>
+    <div class="container">
+    <b>Devi Onfire 2k25©</b>
+    </div>
+</body>
+</html>
